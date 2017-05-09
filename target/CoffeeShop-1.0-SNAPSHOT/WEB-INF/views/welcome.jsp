@@ -9,8 +9,17 @@
 <html>
 <head>
     <title>Java Beans</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Gentium Book Basic', serif;
+        }
+    </style>
 </head>
+<body>
 ${hello}
+<br>
 <a href="/Register">Click to Become a Javabean!</a>
 </body>
 </html>

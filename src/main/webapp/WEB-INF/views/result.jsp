@@ -9,6 +9,13 @@
 <html>
 <head>
     <title>User Registered</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <style>
+        h3 {
+            font-family: 'Domine', serif;;
+        }
+    </style>
 </head>
 <body>
 <h3>Welcome to the club, ${firstName}!</h3>

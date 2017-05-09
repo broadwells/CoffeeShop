@@ -9,6 +9,16 @@
 <html>
 <head>
     <title>Registration</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+    <style>
+        h2 {
+            font-family: 'Gentium Book Basic', serif;
+        }
+        #btn {
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
 <h2>Please complete registration form!</h2>
@@ -29,20 +39,15 @@
         </tr>
         <tr>
             <td><form:label path="password">Password</form:label></td>
-            <td><form:password path="password"></form:password></td>
-            <%--<td><input id="password" name="password" type="password" value=""/></td>--%>
+            <td><form:password path="password"></form:password></td>    <!--Masking Password as user types-->
         </tr>
         <tr>
             <td colspan="2">
-                <input type="submit" value="Register"/>
+                <input id="btn" type="submit" value="Register"/>
             </td>
         </tr>
     </table>
 </form:form>
 
-
-<%--<script>--%>
-<%----%>
-<%--</script>--%>
 </body>
 </html>
