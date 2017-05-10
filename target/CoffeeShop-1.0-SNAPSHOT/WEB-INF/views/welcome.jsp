@@ -10,16 +10,28 @@
 <head>
     <title>Java Beans</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Gentium Book Basic', serif;
-        }
-    </style>
+    <link href="../resources/style.css" rel="stylesheet">
 </head>
 <body>
-${hello}
-<br>
-<a href="/Register">Click to Become a Javabean!</a>
+
+<div class="background">
+    <div class="container">
+        <h1>${hello}</h1>
+        <br>
+        <button>
+            <a href="/Register">Become a Javabean!</a>
+        </button>
+
+    </div>
+</div>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
 </body>
 </html>

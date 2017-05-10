@@ -7,6 +7,9 @@ public class UserInfo {
     private String lastName;
     private String email;
     private String password;
+    private String confirmPassword;
+    private String coffeeChoice;
+    private String shopLocate;
 
     public String getFirstName() {
         return firstName;
@@ -38,5 +41,29 @@ public class UserInfo {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
+    }
+
+    public String getCoffeeChoice() {
+        return coffeeChoice;
+    }
+
+    public void setCoffeeChoice(String coffeeChoice) {
+        this.coffeeChoice = coffeeChoice;
+    }
+
+    public String getShopLocate() {
+        return shopLocate;
+    }
+
+    public void setShopLocate(String shopLocate) {
+        this.shopLocate = shopLocate;
     }
 }
