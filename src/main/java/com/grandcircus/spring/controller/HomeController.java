@@ -20,12 +20,12 @@ public class HomeController {
         return new ModelAndView("welcome","hello", "Welcome to JAVA BEANS!");
     }
 
-    @RequestMapping(value="/Register", method= RequestMethod.GET)
+    @RequestMapping(value="/register", method= RequestMethod.GET)
     public ModelAndView newUser() {
         return new ModelAndView("coffee-user", "command", new UserInfo());
     }
 
-    @RequestMapping(value="/AddUser", method=RequestMethod.POST)
+    @RequestMapping(value="/adduser", method=RequestMethod.POST)
     public String addUser(UserInfo user, Model model){
         String coffee;
         String locate;

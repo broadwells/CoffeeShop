@@ -22,9 +22,9 @@
     <div class="container">
         <h1>${hello}</h1>
         <br>
-        <button>
-            <a href="/Register">Become a Javabean!</a>
-        </button>
+        <form method="get" action="/register">
+            <button type="submit">Become a Javabean!</button>
+        </form>
 
     </div>
 </div>

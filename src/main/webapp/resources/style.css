@@ -11,9 +11,9 @@ p.user-info{
 h2.user-prompt{
     text-align: center;
 }
+
 input.btn {
-    background-color: aquamarine;
-    text-align: center; /*FIXME*/
+    color: #570026;
 }
 
 div.background {
@@ -46,4 +46,8 @@ img.center{
     text-align:center;
     margin: 0 auto;
     padding:0px;
+}
+
+button {
+    color: #570026;
 }
