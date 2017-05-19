@@ -34,13 +34,14 @@
     </nav>
 </header><!-- header role="banner" -->
 
-<h1 class="result">Welcome to the club, ${firstName}!</h1>
+<h1 class="result">Welcome to the club, ${user.firstName}!</h1>
 <p class="user-info">
-    Your favorite coffee choice is ${coffeeChoice}
+    Your favorite coffee choice is ${user.coffeeType}
     <br>Java Bean shop location:
-    <br> ${shopLocate}
+    <br> ${user.shopAddress}
     <br> Detroit, MI 48226
 </p>
+
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

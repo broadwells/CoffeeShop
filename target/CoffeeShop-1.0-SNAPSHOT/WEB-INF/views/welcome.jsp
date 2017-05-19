@@ -25,6 +25,13 @@
         <form method="get" action="/register">
             <button type="submit">Become a Javabean!</button>
         </form>
+        <form method="post" action="/products">
+            <button type="submit">Java Bean Store</button>
+        </form>
+        <br><br><br>
+        <form method="post" action="/maintain">
+            <button type="submit">Admin</button>
+        </form>
 
     </div>
 </div>

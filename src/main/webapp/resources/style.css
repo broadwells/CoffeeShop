@@ -11,9 +11,14 @@ p.user-info{
 h2.user-prompt{
     text-align: center;
 }
+h3{
+    text-align: center;
+}
 
 input.btn {
     color: #570026;
+    float: right;
+    margin-right: 300px;
 }
 
 div.background {
@@ -51,3 +56,21 @@ img.center{
 button {
     color: #570026;
 }
+
+table.product, th, td{
+
+    table-layout: auto;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+fieldset {
+    font-size:14px;
+    padding:5px;
+    width:500px;
+    line-height:1.8;
+    margin: 0 auto;
+    text-align: center;
+}
+

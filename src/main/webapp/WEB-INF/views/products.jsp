@@ -1,19 +1,19 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: broadwells
-  Date: 5/8/17
-  Time: 3:47 PM
+  Date: 5/15/17
+  Time: 9:32 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>User Registered</title>
-
+    <title>Java Bean Store</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
     <link href="../resources/style.css" rel="stylesheet">
 </head>
 <body>
@@ -33,20 +33,31 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header><!-- header role="banner" -->
+<body>
+<h3>Java Bean Merchandise</h3>
 
-<h1 class="result">Welcome to the club, ${user.firstName}!</h1>
-<p class="user-info">
-    Your favorite coffee choice is ${user.coffeeType}
-    <br>Java Bean shop location:
-    <br> ${user.shopAddress}
-    <br> Detroit, MI 48226
-</p>
-
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-</script>
-
+<table class="product">
+    <col width="200">
+    <col width="100">
+    <col width="60">
+    <tr>
+        <th>Product</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    <c:forEach items="${item}" var="listItem">
+        <tr>
+            <td>
+                    ${listItem.product}
+            </td>
+            <td>
+                    ${listItem.quantity} <br> ${listItem.description}
+            </td>
+            <td>
+                    ${listItem.price}
+            </td>
+        </tr>
+    </c:forEach>
+</table>
 </body>
 </html>

@@ -33,52 +33,44 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header><!-- header role="banner" -->
-
+<div class="container">
 <h2 class="user-prompt">Please complete registration form!</h2>
-<form:form name="userInfo" method="POST" action="/adduser" onsubmit="return validateForm()">
-    <div class="container">
-        <div class="row">
+<form name="userInfo" method="POST" action="/adduser" onsubmit="return validateForm()">
 
-            <div class="col-md-4">
-                <h2>Your Information</h2>
-                    <form:label path="firstName">First Name:</form:label>
-                    <form:input path="firstName" /><br>
-                    <form:label path="lastName">Last Name:</form:label>
-                    <form:input path="lastName"/><br>
-                    <form:label path="email">Email:</form:label>
-                    <form:input path="email"/><br>
-                    <form:label path="password">Password:</form:label>
-                    <form:password path="password"></form:password><br>    <!--Masking Password as user types-->
-                    <form:label path="confirmPassword">Confirm Password:</form:label>
-                    <form:password path="confirmPassword"></form:password><br>
-            </div>
-            <div class="col-md-6">
-                <h2>Your Favorite Coffee</h2>
-                    <form:select name="coffee" path="coffeeChoice">
-                        <form:option value="dark">Dark Roast</form:option>
-                        <form:option value="capp">Cappuccino</form:option>
-                        <form:option value="latte">Latte</form:option>
-                        <form:option value="macch">Macchiato</form:option>
-                    </form:select>
-                    <br><br>
-            </div>
-            <div class="col-md-6">
-                <h2>Coffee Shop Location</h2>
-                    <form:select name="locate" path="shopLocate">
-                        <form:option value="wallSt">123 Wall St</form:option>
-                        <form:option value="sesameSt">789 Sesame St</form:option>
-                        <form:option value="woodAve">456 Woodward Ave</form:option>
-                    </form:select>
-            </div>
+    <fieldset>
+        <legend>Personal information:</legend>
+        <input type="text" name="firstName" placeholder="First Name"><br>
+        <input type="text" name="lastName" placeholder="Last Name"><br>
+        <input type="text" name="email" placeholder="Email"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password"><br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Favorite Coffee:</legend>
+        <select name="coffeeChoice">
+            <option value="null">Select Coffee Type</option>
+            <option value="dark">Dark Roast</option>
+            <option value="capp">Cappuccino</option>
+            <option value="latte">Latte</option>
+            <option value="macch">Macchiato</option>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Coffee Shop Location:</legend>
+            <input type="radio" name="shop" value="1">123 Wall St<br>
+            <input type="radio" name="shop" value="2">789 Sesame St<br>
+            <input type="radio" name="shop" value="3">456 Woodward Ave<br>
+    </fieldset>
 
-        </div>
-    </div>
     <br><br>
 
-    <input class="btn" type="submit" value="Register" />
+    <input class="btn" type="submit" value="Register"/>
 
 
-</form:form>
+</form>
+</div>
 
 
 
